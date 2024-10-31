@@ -1,0 +1,184 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc; /* Light neutral background for readability */
+    color: #333; /* Dark gray text for high contrast */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Slim and centered navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #5a6778; /* Neutral dark blue-gray */
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+nav a {
+    color: #f7f9fc; /* Light color for nav text */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3e4954; /* Slightly darker hover color */
+}
+
+/* Adjust for page content */
+body {
+    padding-top: 90px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+/* Section Headings */
+h2 {
+    border-bottom: 2px solid #3e4954; /* Darker accent for section headers */
+    padding-bottom: 10px;
+    margin: 20px 0;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #5a6778; /* Header background */
+    color: #f7f9fc;
+}
+
+.certificate-item {
+    margin-bottom: 20px;
+}
+
+.certificate-item p {
+    font-weight: bold;
+    display: inline;
+    margin-right: 10px;
+}
+
+.certificate-item button {
+    padding: 8px 12px;
+    background-color: #3e4954;
+    color: #f7f9fc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.certificate-item button:hover {
+    background-color: #2f3841; /* Darker button hover */
+}
+
+/* Skills and Projects List */
+ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e9edf4; /* Light background for form */
+}
+
+form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3e4954;
+    color: #f7f9fc;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #2f3841;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    font-size: 32px;
+    color: #5a6778;
+    transition: transform 0.2s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    color: #3e4954;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        margin: 20px 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
